@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pekan 9</title>
+</head>
+<body>
+    <p>
+        <font face='Arial' size='12' color='Black'>Menghitung Jumlah <br> Dua
+            Bilangan Otomatis</font>
+    </p>
+    <hr>
+    <form name='hjlmh' method='post'>
+        <table>
+            <tr>
+                <td>Angka 1</td>
+                <td>:</td>
+                <td><input type='number' name='angka1' onchange='hj();' placeholder="Input angka pertama"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>+</td>
+            </tr>
+            <tr>
+                <td>Angka 2</td>
+                <td>:</td>
+                <td><input type='number' name='angka2' onchange='hj();' placeholder="Input angka kedua"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>=</td>
+            </tr>
+            <tr>
+                <td>Jumlah</td>
+                <td>:</td>
+                <td> <input type='text' name='jumlah' onchange='hj();' placeholder="Jumlah"></td>
+            </tr>
+        </table>
+        
+    </form>
+    <hr>
+</body>
+<script type='text/javascript'>
+    function hj() {
+        var angka1 = document.forms['hjlmh']['angka1'].value;
+        angka1 = parseInt(angka1);
+        var angka2 = document.forms['hjlmh']['angka2'].value;
+        angka2 = parseInt(angka2);
+        var jumlah = angka1 + angka2;
+        document.forms['hjlmh']['jumlah'].value = jumlah;
+    }
+</script>
+
+</html>
